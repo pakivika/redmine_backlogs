@@ -12,10 +12,10 @@ def rb_match(object, path, hash)
     if not hash[:via]
       hash[:via] = [:get]
     end
-    match path, hash
+    get path, hash
 
   else # Rails 3
-    match path, hash
+    get path, hash
   end
 end
 
